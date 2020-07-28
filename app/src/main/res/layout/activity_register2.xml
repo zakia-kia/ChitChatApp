@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_tapBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBlueDark">
+
+        <ImageView
+            android:id="@+id/iv_back_register"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_register"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="110dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Hello"
+        android:textSize="35sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="22dp"
+        android:layout_below="@id/ll_tapBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_please"
+        android:text="@string/text_please"
+        android:layout_below="@id/tv_welcome_back"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="casual"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_username_sigup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/text_username"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+        <EditText
+            android:id="@+id/et_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/text_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+        <EditText
+            android:id="@+id/et_password_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/text_password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_signup_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorBtn"
+            android:text="@string/text_signup"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
