@@ -13,4 +13,10 @@
     <string name="text_con_google">Continue with Google</string>
     <string name="text_register">Register</string>
     <string name="Hello">Hello</string>
+    <string name="text_security_warning">Your messages and calls are secured with end-to-end encryption  which means third parties cannot read or listen,  so dont worry for your privacy</string>
+    <string name="text_security">security</string>
+    <string name="text_setting">Setting</string>
+    <string name="text_hifriends">hi friends</string>
+    <string name="textabout">" This is the chat application of this application you can chat with friends, family, or other people remotely before this you can add numbers that you need to start chatting, simple right ? Thank you to all of you"</string>
+    <string name="text_about">about</string>
 </resources>
