@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreyLight"
+    tools:context=".SettingFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBlueDark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_setting"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="7dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_80dp"
+            android:padding="@dimen/_5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/profile"
+                android:id="@+id/iv_profile_setting"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginStart="@dimen/_7dp"
+                android:layout_marginEnd="@dimen/_7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_username"
+                    android:layout_marginStart="44dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:id="@+id/tv_username_setting"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_hifriends"
+                    android:layout_marginTop="@dimen/_9dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
