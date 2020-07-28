@@ -22,4 +22,7 @@
     <string name="text_privasi">Privasi</string>
     <string name="text_helping">Helping</string>
     <string name="text_aboutapp">About App</string>
+    <string name="text_message_email">Please write email...</string>
+    <string name="text_message_password">Please write password</string>
+    <string name="error_message">error message</string>
 </resources>

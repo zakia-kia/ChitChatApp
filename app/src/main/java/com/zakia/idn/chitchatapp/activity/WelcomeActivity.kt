@@ -17,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         btn_welcome_signup.setOnClickListener {
-  //          val intent = Intent(this, SignupActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             finish()
         }
