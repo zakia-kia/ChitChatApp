@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ChitChatApp</string>
+    <string name="text_login">Login</string>
+    <string name="text_welcome_back">Welcome Back !!</string>
+    <string name="text_please">Please login your account and enjoy</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_signin">Sign In</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="text_hello">Hello! enjoy to this application</string>
+    <string name="text_signup">Sign Up</string>
+    <string name="text_con_google">Continue with Google</string>
 </resources>

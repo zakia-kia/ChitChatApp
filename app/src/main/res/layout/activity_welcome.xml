@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    tools:context=".WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_welcome_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59dp"
+        android:background="@color/colorBlueDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_welcome"
+            android:textColor="@android:color/white"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/chat" />
+
+    <ImageView
+        android:id="@+id/img_smartphone"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="89dp"
+        android:layout_toEndOf="@id/img_chat"
+        android:layout_toRightOf="@id/img_chat"
+        android:src="@drawable/smartphone" />
+
+    <ImageView
+        android:id="@+id/img_globe"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="120dp"
+        android:layout_toEndOf="@id/img_smartphone"
+        android:layout_toRightOf="@id/img_chat"
+        android:src="@drawable/globe" />
+
+    <ImageView
+        android:id="@+id/img_telegram"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/img_chat"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/telegram" />
+
+    <ImageView
+        android:id="@+id/img_group"
+        android:layout_width="88dp"
+        android:layout_height="79dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="230dp"
+        android:layout_toEndOf="@id/img_telegram"
+        android:layout_toRightOf="@id/img_telegram"
+        android:src="@drawable/group" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hello"
+        android:layout_below="@id/img_telegram"
+        android:layout_marginTop="88dp"
+        android:textSize="30sp"
+        android:id="@+id/text_hello"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="44dp"
+        android:layout_below="@id/text_hello"
+        android:id="@+id/sibling_btn">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_signin"
+            android:layout_marginLeft="55dp"
+            android:textSize="16sp"
+            android:background="@color/colorBtn"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_signup"
+            android:layout_marginLeft="55dp"
+            android:textSize="16sp"
+            android:background="@color/colorBtn"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sibling_btn"
+        android:background="@color/colorBtn"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/text_con_google"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
