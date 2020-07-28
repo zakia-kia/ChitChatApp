@@ -19,4 +19,7 @@
     <string name="text_hifriends">hi friends</string>
     <string name="textabout">" This is the chat application of this application you can chat with friends, family, or other people remotely before this you can add numbers that you need to start chatting, simple right ? Thank you to all of you"</string>
     <string name="text_about">about</string>
+    <string name="text_message_email">Please write email...</string>
+    <string name="text_message_password">Plese write password</string>
+    <string name="error_message">error message</string>
 </resources>
