@@ -19,4 +19,17 @@
     <string name="text_hifriends">hi friends</string>
     <string name="textabout">" This is the chat application of this application you can chat with friends, family, or other people remotely before this you can add numbers that you need to start chatting, simple right ? Thank you to all of you"</string>
     <string name="text_about">about</string>
+    <string name="text_helping">Helping</string>
+    <string name="text_info">informasi</string>
+    <string name="text_contact">contact us</string>
+    <string name="text_privasi">"  privacy policy and terms"</string>
+    <string name="text_privasi_bar">Privasi</string>
+    <string name="text_in_key">who can see your personal information</string>
+    <string name="text_last_see">Last see</string>
+    <string name="text_jumlah">16 person</string>
+    <string name="text_infor">Info</string>
+    <string name="text_status">Status</string>
+    <string name="text_report_read">Report read</string>
+    <string name="text_report">if you turn it off, you will not send or receive read reports</string>
+    <string name="text_block_contack">Block Contact</string>
 </resources>
