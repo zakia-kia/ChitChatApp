@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGreyLight"
-    tools:context=".WelcomeActivity">
+    tools:context=".activity.WelcomeActivity">
 
     <LinearLayout
         android:id="@+id/ll_welcome_top"
@@ -58,6 +58,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_welcome_signin"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
@@ -66,6 +67,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/btn_welcome_signup"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
