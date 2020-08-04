@@ -36,4 +36,8 @@
     <string name="text_message_email">Please create email</string>
     <string name="text_message_password">please create password</string>
     <string name="error_message">Error message</string>
+    <string name="text_message_username">Please write your username</string>
+    <string name="text_email_message">Please write your email</string>
+    <string name="text_password_message">Please write your password</string>
+    <string name="Text_users">Users</string>
 </resources>
