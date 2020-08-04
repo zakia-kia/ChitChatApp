@@ -8,14 +8,26 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.zakia.idn.chitchatapp.fragment.CallFragment
 import com.zakia.idn.chitchatapp.fragment.ChatFragment
 import com.zakia.idn.chitchatapp.fragment.SettingFragment
 
 class MainActivity : AppCompatActivity() {
+
+    var firebaseUser : FirebaseUser? = null
+    var refUsers : DatabaseReference? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        firebaseUser= FirebaseAuth.getInstance().currentUser
+        refUsers = FirebaseDatabase.getInstance()
+            .reference.child("Users").child(firebaseUser!!.uid)
 
         val toolBar: Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolBar)

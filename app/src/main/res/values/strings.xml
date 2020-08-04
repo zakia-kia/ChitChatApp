@@ -32,4 +32,8 @@
     <string name="text_report_read">Report read</string>
     <string name="text_report">if you turn it off, you will not send or receive read reports</string>
     <string name="text_block_contack">Block Contact</string>
+    <string name="text_aboutapp">About App</string>
+    <string name="text_message_email">Please create email</string>
+    <string name="text_message_password">please create password</string>
+    <string name="error_message">Error message</string>
 </resources>
