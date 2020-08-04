@@ -1,8 +1,7 @@
-package com.zakia.idn.chitchatapp.activity
+package com.zakia.idn.chitchatapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zakia.idn.chitchatapp.R
 
 class HelpingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

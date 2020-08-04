@@ -6,32 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGreyLight"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
-    <LinearLayout
-        android:id="@+id/ll_tapBar"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_59dp"
-        android:orientation="horizontal"
-        android:background="@color/colorBlueDark">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <ImageView
-            android:id="@+id/iv_back_register"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="7dp"
-            android:src="@drawable/back_arrow"/>
-
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_register"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_register"
-            android:textSize="25sp"
-            android:textColor="@android:color/white"
-            android:layout_marginStart="110dp"
-            android:layout_gravity="center" />
-    </LinearLayout>
+            android:background="@color/colorBlueDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:id="@+id/tv_welcome_back"
@@ -41,9 +29,8 @@
         android:textSize="35sp"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        android:layout_marginTop="44dp"
-        android:layout_marginLeft="22dp"
-        android:layout_below="@id/ll_tapBar"/>
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="22dp"/>
 
     <TextView
         android:layout_width="wrap_content"

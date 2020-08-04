@@ -1,4 +1,4 @@
-package com.zakia.idn.chitchatapp.activity
+package com.zakia.idn.chitchatapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import com.google.firebase.auth.FirebaseAuth
-import com.zakia.idn.chitchatapp.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -53,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener {
                         task ->
                     if (task.isSuccessful){
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this,MainActivity::class.java)
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                         startActivity(intent)
                         finish()
