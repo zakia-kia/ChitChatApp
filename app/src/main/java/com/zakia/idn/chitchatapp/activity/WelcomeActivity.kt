@@ -1,11 +1,14 @@
-package com.zakia.idn.chitchatapp.activity
+package com.zakia.idn.chitchatapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.zakia.idn.chitchatapp.LoginActivity
+import com.zakia.idn.chitchatapp.MainActivity
 import com.zakia.idn.chitchatapp.R
+import com.zakia.idn.chitchatapp.RegisterActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
