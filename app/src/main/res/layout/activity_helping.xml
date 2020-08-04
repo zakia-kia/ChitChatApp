@@ -1,86 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorGreyLight"
     android:layout_height="match_parent"
     tools:context=".HelpingActivity">
-    <LinearLayout
-        android:id="@+id/ll_tapBar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_59dp"
-        android:orientation="horizontal"
-        android:background="@color/colorBlueDark">
 
-        <ImageView
-            android:id="@+id/iv_back_register"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="7dp"
-            android:src="@drawable/back_arrow"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_helping"
-            android:fontFamily="cursive"
-            android:textSize="25sp"
-            android:textColor="@android:color/white"
-            android:layout_marginStart="110dp"
-            android:layout_gravity="center" />
-    </LinearLayout>
-    <ImageView
-        android:id="@+id/iv_helping"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:src="@drawable/question"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="30dp"/>
-    <TextView
-        android:id="@+id/tv_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/iv_helping"
-        android:layout_marginTop="170dp"
-        android:layout_marginStart="20dp"
-        android:textSize="20sp"
-        android:text="@string/text_info"/>
-    <ImageView
-        android:id="@+id/iv_contact"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/contact"
-        android:layout_marginTop="25dp"
-        android:layout_below="@id/iv_helping"
-        android:layout_marginStart="30dp"/>
-    <TextView
-        android:id="@+id/tv_contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/iv_contact"
-        android:layout_below="@id/tv_info"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="35dp"
-        android:textSize="20sp"
-        android:text="@string/text_contact"/>
-    <ImageView
-        android:id="@+id/iv_privasi"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/privacy"
-        android:layout_marginTop="40dp"
-        android:layout_below="@id/iv_contact"
-        android:layout_marginStart="30dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/iv_contact"
-        android:layout_below="@id/tv_contact"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="30dp"
-        android:textSize="20sp"
-        android:text="@string/text_privasi"/>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
