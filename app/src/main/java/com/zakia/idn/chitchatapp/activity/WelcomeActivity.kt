@@ -6,9 +6,9 @@ import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.zakia.idn.chitchatapp.LoginActivity
-import com.zakia.idn.chitchatapp.MainActivity
 import com.zakia.idn.chitchatapp.R
 import com.zakia.idn.chitchatapp.RegisterActivity
+import com.zakia.idn.chitchatapp.activity.MainActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
