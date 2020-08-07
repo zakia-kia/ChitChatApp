@@ -3,6 +3,7 @@ package com.zakia.idn.chitchatapp.model
 class Users {
     private var uid: String = ""
     private var username: String = ""
+    private var bio: String = ""
     private var profile: String = ""
 
     constructor()
@@ -10,10 +11,12 @@ class Users {
     constructor(
         uid: String,
         username: String,
+        bio: String,
         profile: String
     ) {
         this.uid = uid
         this.username = username
+        this.bio = bio
         this.profile = profile
     }
 
@@ -31,6 +34,14 @@ class Users {
 
     fun setUsername(username: String) {
         this.username = username
+    }
+
+    fun getBio(): String? {
+        return bio
+    }
+
+    fun setBio(bio: String) {
+        this.bio = bio
     }
 
     fun getProfile(): String? {
