@@ -35,7 +35,7 @@
     <string name="text_aboutapp">About App</string>
     <string name="text_message_email">Please create email</string>
     <string name="text_message_password">please create password</string>
-    <string name="error_message">Error message</string>
+    <string name="error_message">Error message :</string>
     <string name="text_message_username">Please write your username</string>
     <string name="text_email_message">Please write your email</string>
     <string name="text_password_message">Please write your password</string>
@@ -44,4 +44,7 @@
     <string name="wait_for_upload">Image is uploading, please wait...</string>
     <string name="no_message">no message</string>
     <string name="image_sent">Image Send</string>
+    <string name="text_signout">Sign out</string>
+    <string name="search_user_here">search user here . . .</string>
+    <string name="text_user_name">username</string>
 </resources>
