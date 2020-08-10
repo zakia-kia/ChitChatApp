@@ -33,6 +33,7 @@ class MessageChatActivity : AppCompatActivity() {
     var notify = false
 
     lateinit var recyclerViewChat : RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_message_chat)
@@ -44,11 +45,12 @@ class MessageChatActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener { finish() }
 
         intent = intent
-        userIdVisit = intent.getStringExtra("visit_id").toString()
+        userIdVisit = intent.getStringExtra("visit_id")
         firebaseUser = FirebaseAuth.getInstance().currentUser
 
         recyclerViewChat = findViewById(R.id.rv_chat_message)
         recyclerViewChat.setHasFixedSize(true)
+
         var linearlayoutManager = LinearLayoutManager(applicationContext)
         linearlayoutManager.stackFromEnd = true
         recyclerViewChat.layoutManager = linearlayoutManager
@@ -93,7 +95,25 @@ class MessageChatActivity : AppCompatActivity() {
 
     var seenListener : ValueEventListener? = null
     private fun seenMessage(userIdVisit: String) {
+        val reference = FirebaseDatabase.getInstance().reference.child("Chats")
+        //aktifin seen listener
+        seenListener = reference!!.addValueEventListener(object  : ValueEventListener{
+            override fun onCancelled(error: DatabaseError) {
 
+            }
+
+            override fun onDataChange(snapshots: DataSnapshot) {
+                for (dataSnapshot in snapshots.children){
+                    val chat = dataSnapshot.getValue(Chat::class.java)
+
+                    if (chat!!.getReceiver().equals(firebaseUser!!.uid) && chat!!.getSender().equals(userIdVisit)){
+                        val hasMap = HashMap<String, Any>()
+                        hasMap["iseen"] = true
+                        dataSnapshot.ref.updateChildren(hasMap)
+                    }
+                }
+            }
+        })
     }
 
 
@@ -115,8 +135,8 @@ class MessageChatActivity : AppCompatActivity() {
                     }
                     //adapter u/chat
 
-//                    chatAdapter = ChatAdapter(this@MessageChatActivity, (mChatList as ArrayList<Chat>), imageProfile!!)
-//                    recyclerViewChat.adapter = chatAdapter
+                    chatAdapter = ChatAdapter(this@MessageChatActivity, (mChatList as ArrayList<Chat>), imageProfile!!)
+                    recyclerViewChat.adapter = chatAdapter
                 }
             }
 
@@ -259,6 +279,4 @@ class MessageChatActivity : AppCompatActivity() {
         super.onPause()
         reference!!.removeEventListener(seenListener!!)
     }
-
-
 }

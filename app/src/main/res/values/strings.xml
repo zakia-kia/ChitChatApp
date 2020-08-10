@@ -49,4 +49,7 @@
     <string name="pick_image">pick image</string>
     <string name="image_upload">Image Uploading</string>
     <string name="image_view">image view</string>
+    <string name="text_username">username</string>
+    <string name="search_user_here">Search user here. . .</string>
+    <string name="text_signout">sign out</string>
 </resources>

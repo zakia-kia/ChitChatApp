@@ -21,9 +21,7 @@ import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
 import com.squareup.picasso.Picasso
 import com.zakia.idn.chitchatapp.R
-import com.zakia.idn.chitchatapp.activity.SecurityActivity
 import com.zakia.idn.chitchatapp.model.Users
-import kotlinx.android.synthetic.main.fragment_setting.*
 import kotlinx.android.synthetic.main.fragment_setting.view.*
 
 class SettingFragment : Fragment() {
