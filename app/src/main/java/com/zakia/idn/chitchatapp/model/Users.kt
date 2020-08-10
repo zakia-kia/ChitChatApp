@@ -5,6 +5,7 @@ class Users {
     private var username: String = ""
     private var bio: String = ""
     private var profile: String = ""
+    private var status: String = ""
 
     constructor()
 
@@ -12,12 +13,14 @@ class Users {
         uid: String,
         username: String,
         bio: String,
-        profile: String
+        profile: String,
+        status: String
     ) {
         this.uid = uid
         this.username = username
         this.bio = bio
         this.profile = profile
+        this.status = status
     }
 
     fun getUID(): String? {
@@ -50,5 +53,13 @@ class Users {
 
     fun setProfil(profile: String) {
         this.profile = profile
+    }
+
+    fun getStatus(): String? {
+        return status
+    }
+
+    fun setStatus(status: String) {
+        this.status = status
     }
 }
