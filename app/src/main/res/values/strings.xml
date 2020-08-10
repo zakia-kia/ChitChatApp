@@ -5,7 +5,7 @@
     <string name="text_please">Please login your account and enjoy</string>
     <string name="text_email">Email</string>
     <string name="text_password">Password</string>
-    <string name="text_username">username</string>
+    <string name="text_user_name">username</string>
     <string name="text_signin">Sign In</string>
     <string name="text_welcome">Welcome</string>
     <string name="text_hello">Hello! enjoy to this application</string>
@@ -44,4 +44,8 @@
     <string name="wait_for_upload">Image is uploading, please wait...</string>
     <string name="no_message">no message</string>
     <string name="image_sent">Image Send</string>
+    <string name="write_message_here">write message here...</string>
+    <string name="write_message_fisrt">Please write a message first</string>
+    <string name="pick_image">pick image</string>
+    <string name="image_upload">Image Uploading</string>
 </resources>

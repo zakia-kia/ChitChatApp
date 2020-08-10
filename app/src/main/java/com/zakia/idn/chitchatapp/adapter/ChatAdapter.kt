@@ -4,14 +4,12 @@ import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.zakia.idn.chitchatapp.model.Chat
 
 class ChatAdapter (mContext: Context, mChatList: List<Chat>, imageUrl: String) :
     RecyclerView.Adapter<ChatAdapter.ViewHolder?>(){
+  
 
-    
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatAdapter.ViewHolder {
         TODO("Not yet implemented")
     }
