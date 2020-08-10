@@ -48,4 +48,5 @@
     <string name="write_message_fisrt">Please write a message first</string>
     <string name="pick_image">pick image</string>
     <string name="image_upload">Image Uploading</string>
+    <string name="image_view">image view</string>
 </resources>
