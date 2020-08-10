@@ -7,31 +7,26 @@
     android:background="@color/colorGreyLight"
     tools:context=".fragment.SettingFragment">
 
-    <LinearLayout
-        android:id="@+id/ll_setting_top"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_59dp"
-        android:background="@color/colorBlueDark"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="155dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/text_setting"
-            android:textColor="@android:color/white"
-            android:textSize="27sp" />
-
-    </LinearLayout>
+            android:background="@color/colorBlueDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:id="@+id/ll_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_80dp"
+        android:layout_marginTop="80dp"
         android:orientation="horizontal"
-        android:padding="@dimen/_5dp">
+        android:padding="@dimen/_9dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_profile_setting"
@@ -43,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_7dp"
-            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginTop="23dp"
             android:layout_marginEnd="@dimen/_7dp"
             android:orientation="vertical">
 
@@ -51,105 +46,108 @@
                 android:id="@+id/tv_username_setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
                 android:text="@string/text_username"
                 android:textColor="@android:color/black"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:textSize="22sp" />
 
             <TextView
+                android:id="@+id/tv_bio_setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_9dp"
+                android:fontFamily="cursive"
                 android:text="@string/text_hifriends"
                 android:textColor="@android:color/black"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
     </LinearLayout>
 
     <ImageView
         android:id="@+id/iv_privasi"
-        android:layout_width="30dp"
+        android:layout_width="20dp"
         android:layout_height="30dp"
-        android:src="@drawable/privasi"
         android:layout_below="@id/ll_profile"
-        android:layout_toEndOf="@id/tv_privasi"
+        android:layout_marginStart="@dimen/_10dp"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="@dimen/_10dp"/>
+        android:layout_toEndOf="@id/tv_privasi"
+        android:src="@drawable/privasi" />
+
     <ImageView
         android:id="@+id/iv_securityblack"
-        android:layout_width="30dp"
+        android:layout_width="20dp"
         android:layout_height="30dp"
-        android:src="@drawable/securityblack"
         android:layout_below="@id/iv_privasi"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="30dp"
         android:layout_toEndOf="@id/tv_security"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="@dimen/_10dp"/>
+        android:src="@drawable/securityblack" />
+
     <ImageView
         android:id="@+id/iv_helping"
-        android:layout_width="30dp"
+        android:layout_width="20dp"
         android:layout_height="30dp"
-        android:src="@drawable/helping"
         android:layout_below="@id/iv_securityblack"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="25dp"
         android:layout_toEndOf="@id/tv_helping"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="@dimen/_10dp"/>
+        android:src="@drawable/helping" />
+
     <ImageView
         android:id="@+id/iv_aboutapp"
-        android:layout_width="30dp"
+        android:layout_width="20dp"
         android:layout_height="30dp"
-        android:src="@drawable/aboutapp"
         android:layout_below="@id/iv_helping"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="20dp"
         android:layout_toEndOf="@id/tv_aboutapp"
-        android:layout_marginTop="33dp"
-        android:layout_marginLeft="@dimen/_10dp"/>
+        android:src="@drawable/aboutapp" />
 
 
+    <TextView
+        android:id="@+id/tv_privasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_profile"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="@string/text_privasi"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/tv_privasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="40dp"
-            android:layout_below="@id/ll_profile"
-            android:text="@string/text_privasi"
-            android:textColor="@android:color/black"
-            android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv_security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_privasi"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_security"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/tv_security"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:layout_below="@+id/tv_privasi"
-            android:text="@string/text_security"
-            android:textColor="@android:color/black"
-            android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv_helping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_security"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_helping"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/tv_helping"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:text="@string/text_helping"
-            android:layout_below="@id/tv_security"
-            android:textColor="@android:color/black"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/tv_aboutapp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/tv_helping"
-            android:text="@string/text_aboutapp"
-            android:textColor="@android:color/black"
-            android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv_aboutapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_helping"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_aboutapp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

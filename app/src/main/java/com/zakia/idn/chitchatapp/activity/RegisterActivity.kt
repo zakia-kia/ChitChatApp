@@ -66,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
                     userHashMap["username"] = username
                     userHashMap["status"] = "offline"
                     userHashMap["search"] = username.toLowerCase()
-                    userHashMap["profile"] = "https://firebasestorage.googleapis.com/v0/b/chitchatapp-76fb9.appspot.com/o/profile.jpg?alt=media&token=baa98c60-6ff5-4ea2-8663-f76cfdd4c3df"
+                    userHashMap["profile"] = "https://firebasestorage.googleapis.com/v0/b/chitchatapp-76fb9.appspot.com/o/profile.jpg?alt=media&token=c1e992fd-e43f-469b-8783-d316511b9253"
                     refUsers.updateChildren(userHashMap).addOnCompleteListener { task ->
                         if (task.isSuccessful) {
                             val intent = Intent(this, MainActivity::class.java)
