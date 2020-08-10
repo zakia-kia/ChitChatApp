@@ -42,4 +42,7 @@
     <string name="Text_users">Users</string>
     <string name="upload">uploading . . .</string>
     <string name="wait_for_upload">Image is uploading, please wait...</string>
+    <string name="no_message">No Message</string>
+    <string name="image_sent">Image Sent</string>
+    <string name="text_user_name">User Name</string>
 </resources>
