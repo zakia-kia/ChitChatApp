@@ -69,7 +69,7 @@
 
     <ImageView
         android:id="@+id/iv_securityblack"
-        android:layout_width="20dp"
+        android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@id/iv_privasi"
         android:layout_marginStart="@dimen/_10dp"
@@ -78,21 +78,20 @@
 
     <ImageView
         android:id="@+id/iv_helping"
-        android:layout_width="20dp"
+        android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@id/iv_securityblack"
-        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_12dp"
         android:layout_marginTop="25dp"
         android:src="@drawable/helping" />
 
     <ImageView
         android:id="@+id/iv_aboutapp"
-        android:layout_width="20dp"
+        android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_below="@id/iv_helping"
-        android:layout_marginStart="@dimen/_10dp"
-        android:layout_marginTop="20dp"
-        android:layout_toEndOf="@id/tv_aboutapp"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/aboutapp" />
 
 
@@ -114,11 +113,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_privasi"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:text="@string/text_security"
         android:textColor="@android:color/black"
         android:layout_toRightOf="@id/iv_securityblack"
-        android:textSize="18sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/tv_helping"
@@ -126,11 +125,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_security"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="@string/text_helping"
         android:layout_toRightOf="@id/iv_helping"
         android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/tv_aboutapp"
@@ -141,7 +140,8 @@
         android:layout_marginTop="30dp"
         android:text="@string/text_aboutapp"
         android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:layout_toRightOf="@id/iv_aboutapp"
+        android:textSize="22sp" />
 
 
 </RelativeLayout>

@@ -13,11 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.FullViewImageActivity"></activity>
+        <activity android:name=".activity.AboutAppActivity"></activity>
+        <activity android:name=".activity.AoutAppActivity" />
+        <activity android:name=".activity.FullViewImageActivity" />
         <activity android:name=".activity.VisitUserProfileActivity" />
-        <activity android:name=".activity.MessageChatActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+        <activity
+            android:name=".activity.MessageChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
