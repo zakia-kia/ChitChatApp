@@ -39,7 +39,7 @@ class UserAdapter (
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserAdapter. ViewHolder {
         val view: View = LayoutInflater.from(mContext)
             .inflate(R.layout.user_search_item_layout, parent, false)
         return ViewHolder(view)
@@ -49,7 +49,7 @@ class UserAdapter (
         return mUsers.size
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: UserAdapter.ViewHolder, position: Int) {
         val user : Users = mUsers[position]
         holder.userName.text = user!!.getUsername()
         Picasso.get().load(user.getProfile()).placeholder(R.drawable.profile).into(holder.profile)
