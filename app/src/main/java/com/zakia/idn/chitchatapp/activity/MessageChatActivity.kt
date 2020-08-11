@@ -115,8 +115,8 @@ class MessageChatActivity : AppCompatActivity() {
                     }
                     //adapter u/chat
 
-//                    chatAdapter = ChatAdapter(this@MessageChatActivity, (mChatList as ArrayList<Chat>), imageProfile!!)
-//                    recyclerViewChat.adapter = chatAdapter
+                    chatAdapter = ChatAdapter(this@MessageChatActivity, (mChatList as ArrayList<Chat>), imageProfile!!)
+                    recyclerViewChat.adapter = chatAdapter
                 }
             }
 

@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="@string/text_username"
+            android:hint="@string/text_user_name"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white" />
         <EditText
